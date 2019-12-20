@@ -3,10 +3,10 @@ General
  */
 html{
     font-size: 62.5%; /*62.5% = 10px default*/
-    font-weight: 400;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 .title{font-size: 5.2rem !important; font-weight: 600}
 .subtitle{font-size: 2.7rem !important; font-weight: 400}
@@ -171,7 +171,7 @@ section-1
     background-color: #c41832;
     margin-bottom: 2.3rem;
 }
-.section-1-text > h2 {
+.funding-1-text > h2 {
     color: #c41832;
     font-size: 2.3rem;
     margin-bottom: 1.5rem;
@@ -185,18 +185,57 @@ section-1
     margin-bottom: 3rem;
 }
 /*
-Section 2
+Cards
  */
-.c-card{
-    box-shadow: none;
-    background-color: #f9f9f9;
+@media (min-width: 1200px) {
+    .col-xl-3-b{
+        max-width: 480px;
+    }
+    .card-xl-setSize{
+        width: 400px;
+        height: 154px;
+    }
 }
 
+.c-card-main, .c-card{
+    max-width: 480px;
+    box-shadow: none;
+    padding: 0;
+}
+.c-card-main{
+    background-color: #f9f9f9;
+}
+.c-card{
+    border: 1px solid #d3d3d3;
+}
+.rect-card{
+    width: 5.7rem;
+    height: 0.2rem;
+    background-color: black;
+    margin-bottom: 1.5rem;
+}
+.c-card-header{
+    font-size: 3.1rem;
+    font-weight: 600;
+    color: #c41832;
+    margin-bottom: 1.5rem;
+}
+.c-card-img{
+    margin-top: 4rem;
+    margin-bottom: 6.7rem;
+}
+.card-text{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.4rem;
+}
 .card-body{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     text-align: center;
+    justify-content: space-evenly;
+    padding: 2rem 2.9rem 2rem 2.9rem;
 }
 /*
 pros-list
