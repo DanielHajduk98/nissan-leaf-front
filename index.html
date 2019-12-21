@@ -28,12 +28,13 @@
     </nav>
     <header class="view">
       <img class="img-fluid" src="img/leaf.png" alt="">
-      <section class="text-center mask up-lg-hide w-100">
-        <h2 class="font-weight-bold" style="padding-top: 0.5rem; padding-bottom: 15%; background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%)">ELEKTRYCZNY NISSAN. NASZE SAMOCHODY</h2>
+      <!--Visible only on mobile-->
+      <section class="text-center mask up-lg-hide w-100" >
+        <div class="font-weight-bold" style="padding-top: 0.5rem; padding-bottom: 15%; background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%)"></div>
       </section>
       <div class="calc container-fluid up-lg-hide p-0">
         <div class="container my-4">
-          <h3 class="calc-title">
+          <h3 class="calc-titleRwd">
             Czy elektryk <br>
             bardziej się opłaca?
           </h3>
@@ -79,11 +80,12 @@
             </small>
           </div>
         </div>
-        <div class="container logo-emission" style="height: 30vh!important">
+        <div class="container logo-emission my-5">
           <img src="img/nissan-zero-emission-logo-A008A937EA-seeklogo2.png" alt="Logo nissan zero emission">
         </div>
       </div>
-
+      <!--Visible only on mobile-->
+      <!--Visible on bigger than mobile-->
       <section class="mask row down-lg-hide">
         <div class="col-12 col-lg-8 col-xl-9 mask-text">
           <div class="container pt-5">
@@ -103,23 +105,23 @@
               PRZEJECHANY DYSTANS
             </span>
             <div class="dist-radio ">
-              <button type="button" class="dist-radio-button">100</button>
-              <button type="button" class="dist-radio-button">500</button>
-              <button type="button" class="dist-radio-button">1000</button>
-              <button type="button" class="dist-radio-button">2000</button>
-              <button type="button" class="dist-radio-button">5000</button>
-              <button type="button" class="dist-radio-button">10000</button>
-              <button type="button" class="dist-radio-button">20000</button>
-              <button type="button" class="dist-radio-button">30000</button>
-              <button type="button" class="dist-radio-button">40000</button>
-              <button type="button" class="dist-radio-button">50000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">100</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">500</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">1000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">2000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">5000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">10000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">20000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">30000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">40000</button>
+              <button type="button" class="dist-radio-button" onclick="calculate()">50000</button>
             </div>
-            <div class="dist-label mb-5">
+            <div class="dist-label mb-2 mb-xl-5">
               <span>0 km</span>
               <span>50 000 km</span>
             </div>
           </div>
-          <div class="prices-vs container mb-5">
+          <div class="prices-vs container mb-2 mb-xl-5">
             <div class="d-flex flex-column align-items-start">
               <span style="line-height: 0.5">KOSZT PALIWA</span>
               <h2 id="fuel-price" class="prices-vs-header">350 zł</h2>
@@ -139,11 +141,12 @@
               </small>
             </div>
           </div>
-          <div class="container logo-emission">
+          <div class="container logo-emission align-items-start align-items-xl-center">
             <img src="img/nissan-zero-emission-logo-A008A937EA-seeklogo2.png" alt="Logo nissan zero emission">
           </div>
         </div>
       </section>
+      <!--Visible on bigger than mobile-->
     </header>
     <main class="container">
       <section class="funding">
@@ -342,6 +345,9 @@
   <script type="text/javascript" src="js/mdb.js"></script>
   <script type="text/javascript">
     new WOW().init();
+
+    function calculate(){
+    }
   </script>
 </body>
 
