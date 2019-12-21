@@ -23,19 +23,31 @@ resizing text
 .subtitle{font-size: 2.7rem; font-weight: 400}
 p{font-size: 2.3rem}
 span{font-size: 1.8rem}
-small{font-size:1.4rem}
+small{font-size:1.3rem}
 .row{
     padding: 0;
 }
-@media (max-width: 1399.98px) {
+@media (max-width: 1499.98px) {
     .calc-title{ font-size: 2.5rem!important;}
     .title{ font-size: 4.5rem}
     .subtitle{ font-size: 2.7rem}
+}
+@media (min-width: 1200px) and (max-width: 1499.98px){
+    .title{ font-size: 4rem}
+    .subtitle{ font-size: 2.3rem}
 }
 @media (max-width: 1199.98px) {
     .calc-title{ font-size: 2.5rem}
     .title{ font-size: 3.2rem}
     .subtitle{ font-size: 1.7rem}
+}
+@media (max-width: 575.98px) {
+    .section-header > h1{
+        font-size: 3.4rem;
+    }
+    .section-header > h2{
+        font-size: 2.6rem;
+    }
 }
 /*
 Reusable
@@ -99,6 +111,11 @@ Hero
 /*
 Hero --> Calc
  */
+@media(min-width: 1199.98px) and (max-width:1300px){
+    .calc{
+        padding: 1rem;
+    }
+}
 .calc{
     opacity: 0.9;
     background-color: #c41832;
@@ -171,12 +188,20 @@ Hero --> Calc
 }
 @media (max-width: 1199.98px) {
     .small-note{ line-height: normal }
-    .logo-emission{ min-height: 0 !important}
+    .logo-emission{
+        min-height: 0 !important;
+    }
 }
+
 .logo-emission{
     display: flex;
     justify-content: center;
     min-height: 25%;
+}
+@media (min-width: 1200px) {
+    .logo-emission{
+        height: 30%;
+    }
 }
 /*
 Sections
@@ -211,6 +236,8 @@ main{
 .section-header > h2 {
     font-size: 2.8rem;
 }
+
+
 /*
 Funding
 */
