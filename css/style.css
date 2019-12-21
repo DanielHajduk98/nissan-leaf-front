@@ -223,17 +223,38 @@ Funding
     font-size: 2.8rem;
     font-weight: 600;
     position: absolute;
-    top: 60%;
-    left: -10%;
+    top: 60% !important;
+    left: -6% !important;
     background-color: #c41832;
-    width: 18.5rem;
-    height: 18.5rem;
-    -moz-border-radius: 18.5rem;
-    -webkit-border-radius: 18.5rem;
-    border-radius: 18.5rem;
+    width: 16rem !important;
+    height: 16rem !important;
+    -moz-border-radius: 16rem;
+    -webkit-border-radius: 16rem;
+    border-radius: 16rem;
+    z-index: 1;
+}
+.circle-mask{
+    overflow: visible !important;
+    width: auto;
+    flex: none;
+    display: flex;
+    justify-content: center;
+
 }
 @media (max-width: 1200px){
     .funding{margin-top: 4rem!important;}
+    .circle{
+        transform: rotate(15deg) scale(0.9,0.9);
+        left: -7% !important;
+        top: 60% !important;
+    }
+}
+@media (max-width: 767.98px){
+    .circle{
+        transform: rotate(15deg) scale(0.7,0.7);
+        left: -7% !important;
+        top: 50% !important;
+    }
 }
 .funding{
     display: flex;
@@ -243,6 +264,7 @@ Funding
 .funding > .row{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 }
 .rect-1{
     width: 7.7rem;
