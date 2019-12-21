@@ -28,7 +28,7 @@ small{font-size:1.3rem}
     padding: 0;
 }
 @media (max-width: 1499.98px) {
-    .calc-title{ font-size: 2.5rem!important;}
+    .calc-title{ font-size: 2.5rem !important}
     .title{ font-size: 4.5rem}
     .subtitle{ font-size: 2.7rem}
 }
@@ -37,11 +37,22 @@ small{font-size:1.3rem}
     .subtitle{ font-size: 2.3rem}
 }
 @media (max-width: 1199.98px) {
-    .calc-title{ font-size: 2.5rem}
     .title{ font-size: 3.2rem}
     .subtitle{ font-size: 1.7rem}
 }
+@media (max-width: 991.98px) {
+    .calc-title{
+        font-size: 5rem !important;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}
 @media (max-width: 575.98px) {
+    .calc-title{
+        font-size: 3rem !important;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
     .section-header > h1{
         font-size: 3.4rem;
     }
@@ -111,9 +122,14 @@ Hero
 /*
 Hero --> Calc
  */
-@media(min-width: 1199.98px) and (max-width:1300px){
+@media(max-width: 991.98px) {
+    .mask-unset{
+        position: unset!important;
+    }
+}
+@media(min-width: 1199.98px) and (max-width:1350px){
     .calc{
-        padding: 1rem;
+        padding: 0; /*Ensures calc looks good on given screens*/
     }
 }
 .calc{
@@ -126,12 +142,11 @@ Hero --> Calc
     align-items: center;
     justify-content: space-around;
 }
-.calc-title, .calc-titleRwd{
+.calc-title{
     font-size: 3.2rem;
     font-weight: 600;
     padding: 0;
 }
-
 .dist-radio{
     border-radius: 1.3rem;
     background-color: #ffffff;
@@ -178,7 +193,7 @@ Hero --> Calc
     background-color: white;
     padding: 1rem;
 }
-#calc-result, #calc-resultRwd{
+#calc-result{
     font-weight: 600;
     font-size:3.2rem;
     margin: 0;
@@ -188,20 +203,13 @@ Hero --> Calc
 }
 @media (max-width: 1199.98px) {
     .small-note{ line-height: normal }
-    .logo-emission{
-        min-height: 0 !important;
-    }
 }
 
 .logo-emission{
     display: flex;
     justify-content: center;
-    min-height: 25%;
-}
-@media (min-width: 1200px) {
-    .logo-emission{
-        height: 30%;
-    }
+    flex-grow: 1;
+    align-items: center;
 }
 /*
 Sections
