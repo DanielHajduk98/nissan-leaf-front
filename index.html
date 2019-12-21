@@ -105,16 +105,16 @@
               PRZEJECHANY DYSTANS
             </span>
             <div class="dist-radio ">
-              <button type="button" class="dist-radio-button" onclick="calculate()">100</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">500</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">1000</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">2000</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">5000</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">10000</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">20000</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">30000</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">40000</button>
-              <button type="button" class="dist-radio-button" onclick="calculate()">50000</button>
+              <button type="button" class="dist-radio-button">100</button>
+              <button type="button" class="dist-radio-button">500</button>
+              <button type="button" class="dist-radio-button">1000</button>
+              <button type="button" class="dist-radio-button">2000</button>
+              <button type="button" class="dist-radio-button">5000</button>
+              <button type="button" class="dist-radio-button">10000</button>
+              <button type="button" class="dist-radio-button">20000</button>
+              <button type="button" class="dist-radio-button">30000</button>
+              <button type="button" class="dist-radio-button">40000</button>
+              <button type="button" class="dist-radio-button">50000</button>
             </div>
             <div class="dist-label mb-2 mb-xl-5">
               <span>0 km</span>
@@ -151,7 +151,10 @@
     <main class="container">
       <section class="funding">
         <div class="row">
-          <img class="p-0 col-12 col-xl-6 offset-xl-1" src="img/nissan_leaf_2018_02.png" alt="Nissan leaf">
+          <div class="p-0 col-12 col-xl-6 offset-xl-1 position-relative">
+            <div class="circle">37500 ZŁ <br> TANIEJ</div>
+            <img src="img/nissan_leaf_2018_02.png" alt="Nissan leaf">
+          </div>
           <section class="funding-text col-12 col-xl-5">
             <div class="rect-1 mt-5 mt-lg-0"></div>
             <h2>TWOJA DROGA DO SUKCESU</h2>
@@ -345,9 +348,6 @@
   <script type="text/javascript" src="js/mdb.js"></script>
   <script type="text/javascript">
     new WOW().init();
-
-    function calculate(){
-    }
   </script>
 </body>
 
