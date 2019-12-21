@@ -48,16 +48,16 @@
                 PRZEJECHANY DYSTANS
               </span>
               <div class="dist-radio">
-                <button type="button" class="dist-radio-button">100</button>
-                <button type="button" class="dist-radio-button">500</button>
-                <button type="button" class="dist-radio-button">1000</button>
-                <button type="button" class="dist-radio-button">2000</button>
-                <button type="button" class="dist-radio-button">5000</button>
-                <button type="button" class="dist-radio-button">10000</button>
-                <button type="button" class="dist-radio-button">20000</button>
-                <button type="button" class="dist-radio-button">30000</button>
-                <button type="button" class="dist-radio-button">40000</button>
-                <button type="button" class="dist-radio-button">50000</button>
+                <button onclick="calc(this.id)" id="100" type="button" class="dist-radio-button">100</button>
+                <button onclick="calc(this.id)" id="500" type="button" class="dist-radio-button">500</button>
+                <button onclick="calc(this.id)" id="1000" type="button" class="dist-radio-button">1000</button>
+                <button onclick="calc(this.id)" id="2000" type="button" class="dist-radio-button">2000</button>
+                <button onclick="calc(this.id)" id="5000" type="button" class="dist-radio-button active">5000</button>
+                <button onclick="calc(this.id)" id="10000" type="button" class="dist-radio-button">10000</button>
+                <button onclick="calc(this.id)" id="20000" type="button" class="dist-radio-button">20000</button>
+                <button onclick="calc(this.id)" id="30000" type="button" class="dist-radio-button">30000</button>
+                <button onclick="calc(this.id)" id="40000" type="button" class="dist-radio-button">40000</button>
+                <button onclick="calc(this.id)" id="50000" type="button" class="dist-radio-button">50000</button>
               </div>
               <div class="dist-label mb-5 mb-lg-5">
                 <span>0 km</span>
@@ -71,7 +71,7 @@
               </div>
               <div class="d-flex flex-column align-items-end">
                 <span style="line-height: 0.5">KOSZT PRĄDU</span>
-                <h2 id="power-price" class="prices-vs-header">95 zł</h2>
+                <h2 id="power-price" class="prices-vs-header">75 zł</h2>
               </div>
             </div>
             <div class="container">
@@ -181,7 +181,7 @@
           <h2>ZOBACZ ZADOWOLENIE KIEROWCÓW SAMOCHODÓW ELEKTRYCZNYCH</h2>
         </header>
         <section class="pros-list">
-          <article class="row">
+          <article class="row wow fadeInRight">
             <img class="col-12 col-xl-6" src="img/pros-list-img/18tdieulhd-leafhelios310.jpg.ximg.l_6_m.smart.png" alt="Nissan Leaf ładowany w mieście">
             <div class="col-12 col-xl-6 container">
               <h1 class="initial">1</h1>
@@ -281,7 +281,6 @@
         </div>
       </section>
     </footer>
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
@@ -291,6 +290,20 @@
   <script type="text/javascript" src="js/mdb.js"></script>
   <script type="text/javascript">
     new WOW().init();
+  </script>
+  <script type="text/javascript">
+    var anchor = "5000";
+    function calc(id){
+      $('#'+anchor).removeClass("active");
+      anchor = id;
+      $('#'+id).addClass("active");
+      var fuel = ((id * 7)/100) * 5;
+      var power = ((id * 15)/100) * 0.5;
+      var result = fuel - power;
+      $('#fuel-price').text(fuel);
+      $('#power-price').text(power);
+      $('#calc-result').text(result + " zł taniej*");
+    }
   </script>
 </body>
 
