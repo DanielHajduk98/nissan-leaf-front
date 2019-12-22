@@ -54,6 +54,11 @@ small{font-size:1.3rem}
         margin-bottom: 5rem;
     }
 }
+@media (max-width: 767.98px) {
+    .title{
+        font-size: 2.7rem;
+    }
+}
 @media (max-width: 575.98px) {
     .calc-title{
         font-size: 3rem !important;
@@ -166,13 +171,20 @@ Hero --> Calc
         position: unset!important;
     }
 }
-@media(min-width: 1199.98px) and (max-width:1350px){
+@media(min-width: 992px) and (max-width: 1500px) {
+    .dist-radio-container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media(min-width: 1199.98px) and (max-width:1400px){
     .calc{
         padding: 0;
     }
     .dist-radio-container{
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: .5rem;
+        padding-left: .5rem;
     }
     .prices-vs{
         margin-bottom: 1rem!important;
