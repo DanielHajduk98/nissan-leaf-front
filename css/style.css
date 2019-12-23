@@ -17,7 +17,7 @@ body{
     font-weight: 400;
 }
 /*
-resizing text
+resizing text and/or spacing
  */
 .navbar-title{
     font-size: 1.9rem;
@@ -53,10 +53,20 @@ small{font-size:1.3rem}
         margin-top: 5rem;
         margin-bottom: 5rem;
     }
+    .footer-header{
+        font-size: 3.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+    .footer-link-group > a{
+        font-size: 2.5rem !important;
+    }
 }
 @media (max-width: 767.98px) {
     .title{
-        font-size: 2.7rem;
+        font-size: 2.7rem !important;
+    }
+    footer{
+        padding-top: 5rem!important;
     }
 }
 @media (max-width: 575.98px) {
@@ -108,6 +118,22 @@ Reusable
 /*
 Navbar
 */
+@media (max-width: 300px){
+    .navbar-toggler{
+        padding-right: 1rem !important;
+    }
+}
+@media (max-width: 280px) {
+    .navbar-title{
+        padding-left: 0!important;
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 250px) {
+    .navbar-brand{
+        margin-right: 0!important;
+    }
+}
 .navbar{
     margin:0;
     padding: 0;
@@ -127,14 +153,17 @@ Navbar
     align-content: center;
     justify-self: center;
 }
-.navbar-address > p{
+.navbar-address > a,p{
     font-size: 1.7rem!important;
     line-height: normal;
     font-weight: 400;
 }
-.navbar-address > p:first-line{
+.navbar-address > a{
     font-weight: 600;
     color: #c41832;
+}
+.navbar-address > a:hover{
+    color: #b30721;
 }
 .navbar-button{
     border: solid 1px black;
@@ -144,8 +173,10 @@ Navbar
     font-weight: 600;
  }
  .navbar-button:hover{
-    text-decoration: none;
-     color: #c41832;
+     text-decoration: none;
+     color: #ffffff;
+     transition: background-color 0.5s;
+     background-color: #b30721;
  }
  .nav-item{
      display: flex;
@@ -411,17 +442,19 @@ Funding
 /*
 Cards
  */
-.c-card-main, .c-card{
+.c-card{
     max-width: 480px;
     box-shadow: none;
     padding: 0;
-}
-.c-card-main{
-    background-color: #f9f9f9;
-}
-.c-card{
     border: 1px solid #d3d3d3;
+    background-color: white;
 }
+.c-card:hover{
+    background-color: #f9f9f9;
+    padding: 1px;
+    border: none;
+}
+
 .rect-card{
     width: 5.7rem;
     height: 0.2rem;
@@ -499,7 +532,7 @@ footer{
 }
 .footer-link-group > a:hover{
     transition: color 0.5s;
-    color: #aaaaaa;
+    color: #c41832;
     text-decoration: none;
 }
 .footer-address-group{
@@ -510,20 +543,28 @@ footer{
     font-weight: 600;
     font-size: 1.7rem;
 }
+.address-city:hover{
+    color: #b30721;
+    transition: color 0.5s;
+}
 .footer-address-group > p{
     color: white;
     font-size: 1.7rem;
     line-height: normal;
 }
-.icon_ad{
+.icon-ad-text{
     color: white;
     font-size: 2.1rem;
     margin: 0;
     display: flex;
+    align-items: center;
 }
-.icon_ad:before{
+.icon-ad{
+    margin: 0 0 0 0 !important;
+}
+.icon-ad:before{
     content: url("../img/ikona_ad.png");
-
+    margin-right: 1rem;
 }
 .footer-bottom{
     padding: 1.7rem;
