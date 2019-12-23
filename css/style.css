@@ -61,7 +61,7 @@ small{font-size:1.3rem}
         font-size: 2.5rem !important;
     }
     .c-card:not(:last-child){
-        margin-bottom: 8rem!important;
+        margin-bottom: 9.4rem !important;
     }
 }
 @media (max-width: 767.98px) {
