@@ -38,6 +38,9 @@ small{font-size:1.3rem}
     .calc-title{ font-size: 2.5rem !important}
     .title{ font-size: 4.5rem}
     .subtitle{ font-size: 2.7rem}
+    .calc{
+        min-width: 30% !important;
+    }
 }
 @media (min-width: 1200px) and (max-width: 1499.98px){
     .title{ font-size: 4rem}
@@ -98,10 +101,10 @@ small{font-size:1.3rem}
         font-size: 2rem !important;
     }
     .pros-list-header{
-        font-size: 2.5rem !important;
+        font-size: 2.2rem !important;
     }
-    .pros-list-header:last-child{
-        font-size: 2.2rem!important;
+    .funding-text > h1{
+        font-size: 2.2rem !important;
     }
 }
 /*
@@ -224,32 +227,46 @@ Hero --> Calc
         position: unset!important;
     }
 }
-@media(min-width: 992px) and (max-width: 1500px) {
-    .dist-radio-container{
-        padding-left: 0;
-        padding-right: 0;
+@media (max-width: 1499.98px) {
+    .calc{
+        min-width: 30% !important;
     }
 }
-
-@media(min-width: 1199.98px) and (max-width:1400px){
+@media (min-width: 1500.02px){
+    .calc-title{
+        margin-bottom: 5rem!important;
+    }
+    .dist-label{
+        margin-bottom: 5.7rem!important;
+    }
+}
+@media (max-width: 1360px) {
+    .small-note{line-height: normal}
+}
+@media (max-width: 1249.98px) {
     .calc{
+        min-width: 28% !important;
         padding: 0;
     }
-    .dist-radio-container{
-        padding-right: .5rem;
-        padding-left: .5rem;
+    .calc-title{
+        margin-top: 0 !important;
     }
-    .prices-vs{
-        margin-bottom: 1rem!important;
-    }
+}
+@media (max-width: 1049.98px) {
     .calc{
-        padding-top: 1rem !important;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 @media (max-width: 575.98px) {
     .calc{
         padding-right: 0;
         padding-left: 0;
+    }
+}
+@media (max-width: 339.98px) {
+    .calc-items > .container{
+        padding: 5px;
     }
 }
 .calc{
@@ -284,6 +301,7 @@ Hero --> Calc
     font-size: 1.1rem;
     color: #d3d3d3;
     font-weight: 600;
+    line-height: normal;
 }
 .dist-radio-button:hover{
     border-radius: 1.3rem;
@@ -373,8 +391,6 @@ main{
 .section-header > h2 {
     font-size: 2.8rem;
 }
-
-
 /*
 Funding
 */
@@ -478,10 +494,6 @@ Cards
     color: #c41832;
     margin-bottom: 1.5rem;
 }
-.c-card-img{
-    margin-top: 4rem;
-    margin-bottom: 6.7rem;
-}
 .card-text{
     text-align: center;
     font-size: 1.8rem;
@@ -495,6 +507,14 @@ Cards
     justify-content: space-between;
     padding: 2rem 2.9rem 2rem 2.9rem;
     height: 100%;
+}
+.card-body>header{
+    padding: 0;
+}
+.card-img{
+    padding: 0;
+    margin-top: 4rem;
+    margin-bottom: 6.7rem;
 }
 /*
 pros-list
@@ -585,7 +605,6 @@ footer{
     display: flex;
     align-content: center;
 }
-
 .link-ag{
     font-size: 2.1rem;
     color: white;
