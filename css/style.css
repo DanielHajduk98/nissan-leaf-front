@@ -247,20 +247,9 @@ Hero --> Calc
     }
 }
 @media (max-width: 575.98px) {
-    .dist-radio-container{
-        padding-left: 0;
-        padding-right: 0;
-    }
     .calc{
         padding-right: 0;
         padding-left: 0;
-    }
-    .prices-vs {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .prices-vs > div > span {
-        line-height: 1 !important;
     }
 }
 .calc{
