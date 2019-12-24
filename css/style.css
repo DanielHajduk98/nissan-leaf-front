@@ -109,10 +109,10 @@ small{font-size:1.3rem}
         font-size: 2rem !important;
     }
     .pros-list-header{
-        font-size: 2.2rem !important;
+        font-size: 2.5rem !important;
     }
     .funding-text > h1{
-        font-size: 2.2rem !important;
+        font-size: 2.4rem !important;
     }
 }
 
@@ -190,7 +190,7 @@ Navbar
     align-content: center;
     justify-self: center;
 }
-.navbar-address > a,p{
+.navbar-address > a, .navbar-address > p{
     font-size: 1.7rem!important;
     line-height: normal;
     font-weight: 400;
