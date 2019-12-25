@@ -102,9 +102,9 @@
               <div class="dist-radio">
                 <button onclick="calc(this.id)" id="100" type="button" class="dist-radio-button">100</button>
                 <button onclick="calc(this.id)" id="500" type="button" class="dist-radio-button">500</button>
-                <button onclick="calc(this.id)" id="1000" type="button" class="dist-radio-button">1000</button>
+                <button onclick="calc(this.id)" id="1000" type="button" class="dist-radio-button active">1000</button>
                 <button onclick="calc(this.id)" id="2000" type="button" class="dist-radio-button">2000</button>
-                <button onclick="calc(this.id)" id="5000" type="button" class="dist-radio-button active">5000</button>
+                <button onclick="calc(this.id)" id="5000" type="button" class="dist-radio-button">5000</button>
                 <button onclick="calc(this.id)" id="10000" type="button" class="dist-radio-button">10000</button>
                 <button onclick="calc(this.id)" id="20000" type="button" class="dist-radio-button">20000</button>
                 <button onclick="calc(this.id)" id="30000" type="button" class="dist-radio-button">30000</button>
@@ -128,7 +128,7 @@
             </div>
             <div class="container">
               <div class="calc-results mb-3 mb-lg-1 mb-xl-3">
-                <h1 id="calc-result" class="text-center">255 zł taniej*</h1>
+                <h1 id="calc-result" class="text-center">275 zł taniej*</h1>
               </div>
               <div class="small-note">
                 <small>
@@ -359,7 +359,7 @@
     new WOW().init();
   </script>
   <script type="text/javascript">
-    let anchor = "5000";
+    let anchor = "1000";
     function calc(id){
       $('#'+anchor).removeClass("active");
       anchor = id;
@@ -367,8 +367,8 @@
       let fuel = ((id * 7)/100) * 5;
       let power = ((id * 15)/100) * 0.5;
       let result = fuel - power;
-      $('#fuel-price').text(fuel);
-      $('#power-price').text(power);
+      $('#fuel-price').text(fuel + " zł");
+      $('#power-price').text(power + " zł");
       $('#calc-result').text(result + " zł taniej*");
     }
   </script>

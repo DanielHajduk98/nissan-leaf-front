@@ -50,8 +50,9 @@ small{font-size:1.3rem}
 }
 @media (min-width: 992px) and (max-width: 1069.98px) {
     .calc-title{
-        margin-top: 1rem !important;
+        margin-top: .5rem !important;
         margin-bottom: .5rem !important;
+        font-size: 2.6rem !important;
     }
 }
 @media (min-width: 1200px) and (max-width: 1499.98px){
