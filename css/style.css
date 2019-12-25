@@ -110,10 +110,22 @@ small{font-size:1.3rem}
         font-size: 2rem !important;
     }
     .pros-list-header{
-        font-size: 2.5rem !important;
+        font-size: 2rem !important;
+    }
+    .initial{
+        font-size: 7rem !important;
     }
     .funding-text > h1{
-        font-size: 2.4rem !important;
+        font-size: 2rem !important;
+    }
+    .funding-text > h2{
+        font-size: 1.8rem !important;
+    }
+    p{
+        font-size: 1.7rem !important;
+    }
+    .button{
+        font-size: 1.7rem !important;
     }
 }
 
@@ -544,7 +556,7 @@ pros-list
 Footer
 */
 @media (min-width: 1200px){
-    footer > div.container, .footer-bottom>.container{
+    footer > div.container{
         max-width: 1620px !important;
     }
 }
