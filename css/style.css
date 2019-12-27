@@ -551,6 +551,8 @@ pros-list
     color: #c41832;
     font-weight: 600;
     margin-right: 1rem;
+    line-height: normal;
+    margin-bottom: 0;
 }
 /*
 Footer
